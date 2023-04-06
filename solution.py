@@ -15,3 +15,4 @@ def solution(p: float, x: np.array) -> tuple:
     scale = np.sqrt(np.var(x)) / np.sqrt(len(x))
     return loc - scale * norm.ppf(1 - alpha / 676), \
            loc - scale * norm.ppf(alpha / 676)
+ 
